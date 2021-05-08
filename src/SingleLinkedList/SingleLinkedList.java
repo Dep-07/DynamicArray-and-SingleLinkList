@@ -2,6 +2,7 @@ package SingleLinkedList;
 
 public class SingleLinkedList {
 
+
     public void add(int number){
 
     }
