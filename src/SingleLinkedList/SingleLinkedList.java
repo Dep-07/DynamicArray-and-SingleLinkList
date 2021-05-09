@@ -43,7 +43,19 @@ public class SingleLinkedList {
 
     }
     public void remove(int index){
+        if(index == 0){
+            firstNode = firstNode.nextNode;
+        }
+        else {
+            Node n = firstNode;
+            Node remove;
+            for (int i = 0; i < index - 1; i++) {
+                n = n.nextNode;
+            }
+            remove = n.nextNode;
+            n.nextNode = remove.nextNode;
 
+        }
     }
     public int get(int index){
         Node n = firstNode;

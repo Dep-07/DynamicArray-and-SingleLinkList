@@ -12,6 +12,9 @@ public class SingleLinkedListTest {
         System.out.println(singleLinkedList.size());
         singleLinkedList.contains(5);
 
+        System.out.println(singleLinkedList.contains(8));
+        System.out.println(singleLinkedList.size());
+
 
     }
 
