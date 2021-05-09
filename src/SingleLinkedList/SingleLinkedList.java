@@ -29,6 +29,13 @@ public class SingleLinkedList {
         return -1;
     }
     public void print(){
+        Node n = firstNode;
+        while (n.nextNode != null ){
+            System.out.println(n.number);
+            n = n.nextNode;
+
+        }
+        System.out.println(n.number);
 
     }
     public void clear(){
