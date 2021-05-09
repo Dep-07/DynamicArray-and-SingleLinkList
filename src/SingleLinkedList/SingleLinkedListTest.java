@@ -9,6 +9,7 @@ public class SingleLinkedListTest {
         singleLinkedList.add(10);
         singleLinkedList.add(12);
         singleLinkedList.print();
+        System.out.println(singleLinkedList.size());
 
 
     }

@@ -19,6 +19,26 @@ public class SingleLinkedList {
 
     }
     public void add(int index,int number){
+           /*int count = 1;
+        Node node = new Node(number);
+        if(head == null||index == 0){
+            head = node;
+        }else{
+
+            Node n = head;
+            while (n.next != null){
+                count++;
+                n = n.next;
+                if(count == index){
+                    node.next = n.next ;
+                    n = node.next;
+                }
+
+            }
+
+        }
+
+*/
 
 
     }
@@ -42,8 +62,16 @@ public class SingleLinkedList {
 
     }
     public int size(){
-        return -1;
+        Node n = firstNode;
+        int count = 1;
+        while(n.nextNode != null){
+            n = n.nextNode;
+            count++;
+        }
+        return count;
+
     }
+
     public boolean contains(int number){
         return false;
     }
