@@ -46,6 +46,15 @@ public class SingleLinkedList {
 
     }
     public int get(int index){
+        Node n = firstNode;
+        int count = 0;
+        while (n.nextNode != null){
+            n = n.nextNode;
+            count++;
+            if(count == index){
+                return n.number;
+            }
+        }
         return -1;
     }
     public void print(){
