@@ -73,8 +73,19 @@ public class SingleLinkedList {
     }
 
     public boolean contains(int number){
+        if(firstNode.number == number){
+            return true;
+        }
+        Node n = firstNode;
+        while (n.nextNode != null){
+            n = n.nextNode;
+            if(n.number == number){
+                return true;
+            }
+        }
         return false;
     }
+
     public boolean empty(){
         return firstNode == null;
     }

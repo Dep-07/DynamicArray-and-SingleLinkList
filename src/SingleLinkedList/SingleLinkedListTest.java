@@ -10,6 +10,7 @@ public class SingleLinkedListTest {
         singleLinkedList.add(12);
         singleLinkedList.print();
         System.out.println(singleLinkedList.size());
+        singleLinkedList.contains(5);
 
 
     }
