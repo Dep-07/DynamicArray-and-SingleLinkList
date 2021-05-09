@@ -2,6 +2,7 @@ package SingleLinkedList;
 
 public class SingleLinkedList {
 
+    Node FirstNode;
 
     public void add(int number){
 
@@ -29,6 +30,6 @@ public class SingleLinkedList {
         return false;
     }
     public boolean empty(){
-        return false;
+        return FirstNode == null;
     }
 }
