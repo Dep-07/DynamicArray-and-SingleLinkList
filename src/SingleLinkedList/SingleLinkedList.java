@@ -38,7 +38,16 @@ public class SingleLinkedList {
 
         }
 
-*/
+*/      Node node = new Node(number);
+        Node n;
+        n = firstNode;
+
+        for (int i = 0; i <index -1 ; i++) {
+            n = n.nextNode;
+        }
+        node.nextNode = n.nextNode;
+        n.nextNode = node;
+
 
 
     }
