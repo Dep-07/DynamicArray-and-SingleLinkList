@@ -8,6 +8,7 @@ public class SingleLinkedListTest {
         singleLinkedList.add(6);
         singleLinkedList.add(10);
         singleLinkedList.add(12);
+        singleLinkedList.print();
 
 
     }
