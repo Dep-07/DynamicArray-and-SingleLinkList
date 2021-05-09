@@ -2,9 +2,20 @@ package SingleLinkedList;
 
 public class SingleLinkedList {
 
-    Node FirstNode;
+    Node firstNode;
 
     public void add(int number){
+        Node node = new Node(number);
+        if(firstNode == null){
+            firstNode = node;
+        }
+        else{
+            Node n = firstNode;
+            while (n.nextNode != null){
+                n = n.nextNode;
+            }
+            n.nextNode = node;
+        }
 
     }
     public void add(int index,int number){
@@ -30,6 +41,6 @@ public class SingleLinkedList {
         return false;
     }
     public boolean empty(){
-        return FirstNode == null;
+        return firstNode == null;
     }
 }
